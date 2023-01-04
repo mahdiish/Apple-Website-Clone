@@ -20,6 +20,15 @@ const quickLinksVerticalMenu = document.querySelector(
   ".quickLinksVerticalMenu"
 );
 const cancelSearch = document.querySelector(".cancelSearch");
+//
+const firstBannerButton1 = document.querySelector(".firstBannerButton1");
+const firstBannerButton2 = document.querySelector(".firstBannerButton2");
+const firstBannerButton1Text = document.querySelector(
+  ".firstBannerButton1Text"
+);
+const firstBannerButton2Text = document.querySelector(
+  ".firstBannerButton2Text"
+);
 
 // Header
 searchIcon.addEventListener("click", (e) => {
@@ -92,4 +101,21 @@ hamburgerIcon.addEventListener("mouseout", (e) => {
   hamburgerBar1.style.transition = "0.5s";
   hamburgerBar2.classList.remove("hamburgerBarHover");
   hamburgerBar2.style.transition = "0.5s";
+});
+
+// First Banner
+firstBannerButton1.addEventListener("mouseover", (e) => {
+  firstBannerButton1Text.style.textDecoration = "underline";
+});
+
+firstBannerButton1.addEventListener("mouseout", (e) => {
+  firstBannerButton1Text.style.textDecoration = "none";
+});
+
+firstBannerButton2.addEventListener("mouseover", (e) => {
+  firstBannerButton2Text.style.textDecoration = "underline";
+});
+
+firstBannerButton2.addEventListener("mouseout", (e) => {
+  firstBannerButton2Text.style.textDecoration = "none";
 });

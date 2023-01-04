@@ -5,6 +5,8 @@ body {
   border: 0;
   height: 100%;
   width: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #fbfbfd;
 }
 
 /* Header */
@@ -20,7 +22,6 @@ body {
 .menuText {
   color: #d7d7d7;
   text-decoration: none;
-  font-family: Helvetica, sans-serif;
   font-size: 12px;
   line-height: 44px;
 }
@@ -65,7 +66,6 @@ body {
 }
 
 .inputSearchHeader {
-  font-family: Helvetica, sans-serif;
   font-size: 17px;
   line-height: 22px;
   color: #d7d7d7;
@@ -121,7 +121,6 @@ body {
 
 .quickLinks p {
   color: #6e6e73;
-  font-family: Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
   padding-left: 36px;
@@ -131,7 +130,6 @@ body {
 .quickLinks a {
   text-decoration: none;
   color: #1d1d1f;
-  font-family: Helvetica, sans-serif;
   font-size: 14px;
   line-height: 28px;
   padding-left: 52px;
@@ -179,6 +177,8 @@ body {
   width: 100%;
   height: 100vh;
   overflow-y: hidden;
+  z-index: 2;
+  position: absolute;
 }
 
 .blackBackground {
@@ -222,7 +222,6 @@ body {
   color: #2997ff;
   font-size: 17px;
   line-height: 21px;
-  font-family: Helvetica, sans-serif;
   padding-left: 19px;
   cursor: pointer;
 }
@@ -240,7 +239,6 @@ body {
 }
 
 .inputSearch {
-  font-family: Helvetica, sans-serif;
   font-size: 17px;
   line-height: 21px;
   color: #5a5a5f;
@@ -292,7 +290,6 @@ body {
 
 .quickLinksVerticalMenu p {
   color: #86868b;
-  font-family: Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
   padding-left: 9%;
@@ -301,7 +298,6 @@ body {
 .quickLinksVerticalMenu a {
   text-decoration: none;
   color: #d5d5d5;
-  font-family: Helvetica, sans-serif;
   font-size: 14px;
   line-height: 43px;
   margin: 0 9%;
@@ -324,7 +320,6 @@ body {
 .verticalMenuText {
   color: #cccccc;
   text-decoration: none;
-  font-family: Helvetica, sans-serif;
   font-size: 17px;
   line-height: 21px;
   padding-top: 12px;
@@ -380,5 +375,130 @@ body {
   .logoIcon,
   .bagIcon {
     display: block;
+  }
+}
+
+/* First Banner */
+.firstBanner {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 12px;
+  /* background-color: #fbfbfd; */
+}
+
+.firstBanner h1 {
+  font-size: 50px;
+  color: #1d1d1f;
+  margin-bottom: 0;
+}
+
+.firstBanner p {
+  font-size: 26px;
+  color: #1d1d1f;
+  margin: 5px 0 16px 0;
+}
+
+.firstBannerButtons {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.firstBannerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstBannerButton a {
+  text-decoration: none;
+}
+
+.firstBannerButton1Text,
+.firstBannerButton2Text {
+  font-size: 21px;
+  color: #287ed4;
+  margin-right: 7px;
+}
+
+.firstBannerButton i {
+  font-size: 14px;
+  color: #287ed4;
+}
+
+.firstBannerButton1 {
+  margin-right: 41px;
+}
+
+/* Max Width 1069 */
+@media screen and (max-width: 1069px) {
+  .firstBanner {
+    padding-top: 10px;
+  }
+
+  .firstBanner h1 {
+    font-size: 40px;
+  }
+
+  .firstBanner p {
+    font-size: 22px;
+    margin: 5px 0 16px 0;
+  }
+
+  .firstBannerButtons {
+    margin-bottom: 12px;
+  }
+
+  .firstBannerButton1Text,
+  .firstBannerButton2Text {
+    font-size: 19px;
+    margin-right: 6px;
+  }
+
+  .firstBannerButton i {
+    font-size: 12px;
+    color: #287ed4;
+  }
+
+  .firstBannerButton1 {
+    margin-right: 38px;
+  }
+}
+
+/* Max Width 735 */
+@media screen and (max-width: 735px) {
+  .firstBanner {
+    padding-top: 8px;
+  }
+
+  .firstBanner h1 {
+    font-size: 30px;
+  }
+
+  .firstBanner p {
+    font-size: 18px;
+    margin: 5px 0 16px 0;
+  }
+
+  .firstBannerButtons {
+    margin-bottom: 12px;
+  }
+
+  .firstBannerButton1Text,
+  .firstBannerButton2Text {
+    font-size: 17px;
+    margin-right: 5px;
+  }
+
+  .firstBannerButton i {
+    font-size: 10px;
+    color: #287ed4;
+  }
+
+  .firstBannerButton1 {
+    margin-right: 32px;
   }
 }
