@@ -502,3 +502,146 @@ body {
     margin-right: 32px;
   }
 }
+
+/* Gift Banner */
+.giftBanner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 12px;
+  overflow-x: hidden;
+}
+
+.giftBanner img {
+  height: 580px;
+}
+
+.giftBanner h1 {
+  position: absolute;
+  font-size: 50px;
+  color: #f5f5f7;
+  margin-bottom: 0;
+  margin-top: 396px;
+}
+
+.giftBanner p {
+  position: absolute;
+  font-size: 26px;
+  color: #f5f5f7;
+  margin-top: 461px;
+}
+
+.breakGiftBannerText {
+  display: none;
+}
+
+.giftBannerButton {
+  position: absolute;
+  margin-top: 508px;
+}
+
+.giftBannerButton a {
+  text-decoration: none;
+}
+
+.giftBannerButtonText {
+  font-size: 21px;
+  color: #2997ff;
+  margin-right: 7px;
+}
+
+.giftBannerButton i {
+  font-size: 14px;
+  color: #2997ff;
+}
+
+/* Max Width 1053 */
+@media screen and (max-width: 1053px) {
+  .giftBanner img {
+    height: 569px;
+  }
+
+  .giftBanner h1 {
+    position: absolute;
+    font-size: 46px;
+    color: #f5f5f7;
+    margin-bottom: 0;
+    margin-top: 400px;
+  }
+
+  .giftBanner p {
+    position: absolute;
+    font-size: 23px;
+    color: #f5f5f7;
+    margin-top: 463px;
+  }
+
+  .giftBannerButton {
+    position: absolute;
+    margin-top: 505px;
+  }
+
+  .giftBannerButton a {
+    text-decoration: none;
+  }
+
+  .giftBannerButtonText {
+    font-size: 19px;
+    margin-right: 7px;
+  }
+
+  .giftBannerButton i {
+    font-size: 12px;
+  }
+}
+
+/* Max Width 716 */
+@media screen and (max-width: 716px) {
+  .giftBanner img {
+    height: 500px;
+  }
+
+  .giftBanner h1 {
+    position: absolute;
+    font-size: 31px;
+    color: #f5f5f7;
+    margin-bottom: 0;
+    margin-top: 335px;
+  }
+
+  .giftBanner p {
+    position: absolute;
+    font-size: 18px;
+    line-height: 23px;
+    color: #f5f5f7;
+    margin-top: 375px;
+    text-align: center;
+  }
+
+  .breakGiftBannerText {
+    display: block;
+  }
+
+  .giftBannerButton {
+    position: absolute;
+    margin-top: 431px;
+  }
+
+  .giftBannerButton a {
+    text-decoration: none;
+  }
+
+  .giftBannerButtonText {
+    font-size: 17px;
+    color: #2997ff;
+    margin-right: 7px;
+  }
+
+  .giftBannerButton i {
+    font-size: 10px;
+    color: #2997ff;
+  }
+}
