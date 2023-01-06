@@ -29,6 +29,18 @@ const firstBannerButton1Text = document.querySelector(
 const firstBannerButton2Text = document.querySelector(
   ".firstBannerButton2Text"
 );
+//
+const giftBannerButton = document.querySelector(".giftBannerButton");
+const giftBannerButtonText = document.querySelector(".giftBannerButtonText");
+//
+const watchBannerButton1 = document.querySelector(".watchBannerButton1");
+const watchBannerButton2 = document.querySelector(".watchBannerButton2");
+const watchBannerButton1Text = document.querySelector(
+  ".watchBannerButton1Text"
+);
+const watchBannerButton2Text = document.querySelector(
+  ".watchBannerButton2Text"
+);
 
 // Header
 searchIcon.addEventListener("click", (e) => {
@@ -118,4 +130,30 @@ firstBannerButton2.addEventListener("mouseover", (e) => {
 
 firstBannerButton2.addEventListener("mouseout", (e) => {
   firstBannerButton2Text.style.textDecoration = "none";
+});
+
+//Gift Banner
+giftBannerButton.addEventListener("mouseover", (e) => {
+  giftBannerButtonText.style.textDecoration = "underline";
+});
+
+giftBannerButton.addEventListener("mouseout", (e) => {
+  giftBannerButtonText.style.textDecoration = "none";
+});
+
+//Apple Watch 8 Banner
+watchBannerButton1.addEventListener("mouseover", (e) => {
+  watchBannerButton1Text.style.textDecoration = "underline";
+});
+
+watchBannerButton1.addEventListener("mouseout", (e) => {
+  watchBannerButton1Text.style.textDecoration = "none";
+});
+
+watchBannerButton2.addEventListener("mouseover", (e) => {
+  watchBannerButton2Text.style.textDecoration = "underline";
+});
+
+watchBannerButton2.addEventListener("mouseout", (e) => {
+  watchBannerButton2Text.style.textDecoration = "none";
 });

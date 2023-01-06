@@ -645,3 +645,215 @@ body {
     color: #2997ff;
   }
 }
+
+/* Apple Watch 8 Banner */
+.watchBanner {
+  border: 1px solid gold;
+  /* z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 12px;
+  background-color: #000000;
+  padding: 53px 0 0 0;
+}
+
+/* .watchBanner > * {
+  border: 1px solid gold;
+} */
+
+.watchBanner h1 {
+  font-size: 43px;
+  line-height: 43px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.logoWatch {
+  font-size: 52px;
+  padding-right: 6px;
+}
+
+.watchBanner h6 {
+  font-size: 18px;
+  color: #cc2127;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 5px 0 6px 0;
+}
+
+.watchBanner h6 span {
+  padding-left: 4px;
+}
+
+.watchBanner p {
+  font-size: 27px;
+  color: #ffffff;
+  margin: 0px 0 16px 0;
+}
+
+.watchBannerButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 43px;
+}
+
+.watchBannerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watchBannerButton a {
+  text-decoration: none;
+}
+
+.watchBannerButton1Text,
+.watchBannerButton2Text {
+  font-size: 21px;
+  color: #287ed4;
+  margin-right: 7px;
+}
+
+.watchBannerButton i {
+  font-size: 14px;
+  color: #287ed4;
+}
+
+.watchBannerButton1 {
+  margin-right: 41px;
+}
+
+.watchBanner img {
+  width: 469px;
+  height: 317px;
+}
+
+/* Max Width 1053 */
+@media screen and (max-width: 1053px) {
+  .watchBanner {
+    padding: 59px 0 0 0;
+  }
+
+  .watchBanner h1 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .logoWatch {
+    font-size: 44px;
+    padding-right: 5px;
+  }
+
+  .watchBanner h6 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 4px 0 9px 0;
+  }
+
+  .watchBanner h6 span {
+    padding-left: 4px;
+  }
+
+  .watchBanner p {
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0px 0 15px 0;
+  }
+
+  .watchBannerButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43px;
+  }
+
+  .watchBannerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .watchBannerButton a {
+    text-decoration: none;
+  }
+
+  .watchBannerButton1Text,
+  .watchBannerButton2Text {
+    font-size: 19px;
+    margin-right: 7px;
+  }
+
+  .watchBannerButton i {
+    font-size: 12px;
+  }
+
+  .watchBannerButton1 {
+    margin-right: 38px;
+  }
+
+  .watchBanner img {
+    width: 460px;
+    height: 317px;
+  }
+}
+
+/* Max Width 716 */
+@media screen and (max-width: 716px) {
+  .watchBanner {
+    padding: 40px 0 0 0;
+  }
+
+  .watchBanner h1 {
+    font-size: 21px;
+    line-height: 31px;
+  }
+
+  .logoWatch {
+    font-size: 27px;
+    padding-right: 4px;
+  }
+
+  .watchBanner h6 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 0 0px 0;
+  }
+
+  .watchBanner h6 span {
+    padding-left: 3px;
+  }
+
+  .watchBanner p {
+    font-size: 19px;
+    color: #ffffff;
+    margin: 7px 0 13px 0;
+  }
+
+  .watchBannerButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 89px;
+  }
+
+  .watchBannerButton1Text,
+  .watchBannerButton2Text {
+    font-size: 17px;
+    margin-right: 7px;
+  }
+
+  .watchBannerButton i {
+    font-size: 10px;
+  }
+
+  .watchBannerButton1 {
+    margin-right: 33px;
+  }
+
+  .watchBanner img {
+    width: 308px;
+    height: 250px;
+  }
+}
