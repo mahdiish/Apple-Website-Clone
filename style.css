@@ -648,7 +648,6 @@ body {
 
 /* Apple Watch 8 Banner */
 .watchBanner {
-  border: 1px solid gold;
   /* z-index: 1; */
   display: flex;
   flex-direction: column;
@@ -855,5 +854,250 @@ body {
   .watchBanner img {
     width: 308px;
     height: 250px;
+  }
+}
+
+/*  Gift2 & Card Banners */
+.gift2AndCardBanners {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  margin: 12px 12px 0 12px;
+  position: relative;
+}
+
+.gift2Banner {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.cardBanner {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.gift2AndCardBanners img {
+  height: 580px;
+  width: 100%;
+}
+
+.gift2Banner h1 {
+  position: absolute;
+  top: 0px;
+  margin-top: 54px;
+  font-size: 39px;
+  color: #f5f5f7;
+  letter-spacing: 1px;
+}
+
+.gift2Banner p {
+  position: absolute;
+  top: 0px;
+  margin-top: 101px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #f5f5f7;
+  text-align: center;
+}
+
+.gift2BannerButton {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0px;
+  margin-top: 169px;
+}
+
+.gift2BannerButton a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gift2BannerButtonText {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 7px;
+}
+
+.gift2BannerButton i {
+  font-size: 10px;
+  color: #ffffff;
+}
+
+/* */
+.cardBanner h1 {
+  position: absolute;
+  top: 0px;
+  margin-top: 54px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.logoCard {
+  font-size: 37px;
+  padding-right: 2px;
+}
+
+.cardBanner p {
+  position: absolute;
+  top: 0px;
+  margin-top: 100px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1d1d1f;
+  text-align: center;
+}
+
+.cardBannerButtons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  margin-top: 161px;
+}
+
+.cardBannerButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardBannerButton a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardBannerButton1Text,
+.cardBannerButton2Text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #0066cc;
+  padding-right: 7px;
+}
+
+.cardBannerButton i {
+  font-size: 10px;
+  color: #0066cc;
+}
+
+.cardBannerButton1 {
+  margin-right: 34px;
+}
+
+/* Max Width 1053 */
+@media screen and (max-width: 1053px) {
+  .gift2AndCardBanners img {
+    height: 490px;
+  }
+
+  .gift2Banner h1 {
+    margin-top: 42px;
+    font-size: 32px;
+    color: #f5f5f7;
+    letter-spacing: 0px;
+  }
+
+  .gift2Banner p {
+    margin-top: 82px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .gift2BannerButton {
+    margin-top: 143px;
+  }
+
+  .cardBanner h1 {
+    margin-top: 42px;
+    font-size: 31px;
+  }
+
+  .logoCard {
+    font-size: 31px;
+    padding-right: 1px;
+  }
+
+  .cardBanner p {
+    position: absolute;
+    top: 0px;
+    margin-top: 79px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .cardBannerButtons {
+    margin-top: 140px;
+  }
+}
+
+/* Max Width 718 */
+@media screen and (max-width: 718px) {
+  .gift2AndCardBanners {
+    flex-direction: column;
+    margin: 12px 0 0 0;
+  }
+
+  .gift2Banner {
+    margin-right: 0px;
+    margin-bottom: 6px;
+  }
+
+  .cardBanner {
+    margin-left: 0px;
+    margin-top: 6px;
+  }
+
+  .gift2AndCardBanners img {
+    height: 500px;
+  }
+
+  .gift2Banner h1 {
+    margin-top: 36px;
+    font-size: 32px;
+  }
+
+  .gift2Banner p {
+    margin-top: 75px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .gift2BannerButton {
+    margin-top: 136px;
+  }
+
+  .cardBanner h1 {
+    margin-top: 36px;
+    font-size: 32px;
+  }
+
+  .logoCard {
+    font-size: 32px;
+    padding-right: 1px;
+  }
+
+  .cardBanner p {
+    margin-top: 76px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .cardBannerButtons {
+    margin-top: 137px;
   }
 }

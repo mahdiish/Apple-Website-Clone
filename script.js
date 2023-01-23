@@ -41,6 +41,14 @@ const watchBannerButton1Text = document.querySelector(
 const watchBannerButton2Text = document.querySelector(
   ".watchBannerButton2Text"
 );
+//
+const gift2BannerButton = document.querySelector(".gift2BannerButton");
+const gift2BannerButtonText = document.querySelector(".gift2BannerButtonText");
+//
+const cardBannerButton1 = document.querySelector(".cardBannerButton1");
+const cardBannerButton2 = document.querySelector(".cardBannerButton2");
+const cardBannerButton1Text = document.querySelector(".cardBannerButton1Text");
+const cardBannerButton2Text = document.querySelector(".cardBannerButton2Text");
 
 // Header
 searchIcon.addEventListener("click", (e) => {
@@ -156,4 +164,29 @@ watchBannerButton2.addEventListener("mouseover", (e) => {
 
 watchBannerButton2.addEventListener("mouseout", (e) => {
   watchBannerButton2Text.style.textDecoration = "none";
+});
+
+//Gift2 & Card Banners
+gift2BannerButton.addEventListener("mouseover", (e) => {
+  gift2BannerButtonText.style.textDecoration = "underline";
+});
+
+gift2BannerButton.addEventListener("mouseout", (e) => {
+  gift2BannerButtonText.style.textDecoration = "none";
+});
+
+cardBannerButton1.addEventListener("mouseover", (e) => {
+  cardBannerButton1Text.style.textDecoration = "underline";
+});
+
+cardBannerButton1.addEventListener("mouseout", (e) => {
+  cardBannerButton1Text.style.textDecoration = "none";
+});
+
+cardBannerButton2.addEventListener("mouseover", (e) => {
+  cardBannerButton2Text.style.textDecoration = "underline";
+});
+
+cardBannerButton2.addEventListener("mouseout", (e) => {
+  cardBannerButton2Text.style.textDecoration = "none";
 });
