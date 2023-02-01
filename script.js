@@ -49,6 +49,28 @@ const cardBannerButton1 = document.querySelector(".cardBannerButton1");
 const cardBannerButton2 = document.querySelector(".cardBannerButton2");
 const cardBannerButton1Text = document.querySelector(".cardBannerButton1Text");
 const cardBannerButton2Text = document.querySelector(".cardBannerButton2Text");
+//
+const macBookProBannerButton1 = document.querySelector(
+  ".macBookProBannerButton1"
+);
+const macBookProBannerButton2 = document.querySelector(
+  ".macBookProBannerButton2"
+);
+const macBookProBannerButton1Text = document.querySelector(
+  ".macBookProBannerButton1Text"
+);
+const macBookProBannerButton2Text = document.querySelector(
+  ".macBookProBannerButton2Text"
+);
+//
+const homePodBannerButton1 = document.querySelector(".homePodBannerButton1");
+const homePodBannerButton2 = document.querySelector(".homePodBannerButton2");
+const homePodBannerButton1Text = document.querySelector(
+  ".homePodBannerButton1Text"
+);
+const homePodBannerButton2Text = document.querySelector(
+  ".homePodBannerButton2Text"
+);
 
 // Header
 searchIcon.addEventListener("click", (e) => {
@@ -189,4 +211,38 @@ cardBannerButton2.addEventListener("mouseover", (e) => {
 
 cardBannerButton2.addEventListener("mouseout", (e) => {
   cardBannerButton2Text.style.textDecoration = "none";
+});
+
+//MacBook Pro & HomePod Banners
+macBookProBannerButton1.addEventListener("mouseover", (e) => {
+  macBookProBannerButton1Text.style.textDecoration = "underline";
+});
+
+macBookProBannerButton1.addEventListener("mouseout", (e) => {
+  macBookProBannerButton1Text.style.textDecoration = "none";
+});
+
+macBookProBannerButton2.addEventListener("mouseover", (e) => {
+  macBookProBannerButton2Text.style.textDecoration = "underline";
+});
+
+macBookProBannerButton2.addEventListener("mouseout", (e) => {
+  macBookProBannerButton2Text.style.textDecoration = "none";
+});
+
+//
+homePodBannerButton1.addEventListener("mouseover", (e) => {
+  homePodBannerButton1Text.style.textDecoration = "underline";
+});
+
+homePodBannerButton1.addEventListener("mouseout", (e) => {
+  homePodBannerButton1Text.style.textDecoration = "none";
+});
+
+homePodBannerButton2.addEventListener("mouseover", (e) => {
+  homePodBannerButton2Text.style.textDecoration = "underline";
+});
+
+homePodBannerButton2.addEventListener("mouseout", (e) => {
+  homePodBannerButton2Text.style.textDecoration = "none";
 });
