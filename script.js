@@ -78,7 +78,9 @@ hamburgerIcon.addEventListener("click", (e) => {
   verticalMenu.classList.toggle("visibleClass");
   headerMenu.classList.toggle("blackBackground");
   bagIcon.classList.toggle("hiddenClass");
-  document.body.classList.toggle("hiddenOverflow")
+  window.scrollTo(0, 0);
+  document.body.classList.toggle("hiddenOverflow");
+
 });
 
 hamburgerIcon.addEventListener("mouseover", (e) => {
