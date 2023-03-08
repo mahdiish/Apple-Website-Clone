@@ -1647,7 +1647,6 @@ body {
 
 /* Footer */
 .footer {
-  border: 1px solid brown;
   padding: 20px calc(50.26% - 501.48px) 29px calc(50.26% - 501.48px);
   background-color: #f5f5f7;
 }
@@ -1765,6 +1764,10 @@ body {
   color: #424245;
 }
 
+.bottomSectionFooter2 a:hover {
+text-decoration: underline;
+}
+
 .bottomLeftSectionFooter {
   display: flex;
   flex-direction: row;
@@ -1806,6 +1809,10 @@ body {
 }
 
 @media screen and (max-width: 833px) {
+  .footer {
+    padding: 20px 15px 29px 15px;
+  }
+
   .middleSectionFooter {
     flex-direction: column;
   }
@@ -1870,5 +1877,22 @@ body {
 
   .bottomLeftSectionFooter div {
     padding-top: 3px;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .bottomLeftSectionFooter div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .oneToLastItem{
+    margin-right: 10px;
+  }
+
+  .bottomLeftSectionFooter a:last-child {
+    padding-left: 0;
   }
 }
