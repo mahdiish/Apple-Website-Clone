@@ -557,3 +557,84 @@ window.addEventListener("resize", (event) => {
     eleventhSeriesImg.src = "./Imgs/appleTV+1.jpg";
   }
 });
+
+// Footer
+const footerCategory = document.querySelectorAll(".footerCategory");
+const footerSubtitles = document.querySelectorAll(".footerSubtitles");
+const footerTitleOpener = document.querySelectorAll(".footerTitleOpener");
+
+if (window.innerWidth < 833) {
+  for (let i = 0; i < footerSubtitles.length; i++) {
+    footerSubtitles[i].classList.add("noneDisplay");
+    let clickCount = 0;
+    footerCategory[i].addEventListener("click", (e) => {
+      clickCount++;
+
+      // footerSubtitles[i].classList.toggle("noneDisplay");
+      // footerSubtitles[i].classList.toggle("flexDisplayColumn");
+
+      if (clickCount / 2 == Math.round(clickCount / 2)) {
+        footerTitleOpener[i].classList.remove("footerTitleOpenerRotate");
+        footerTitleOpener[i].classList.add("footerTitleOpenerRotate2");
+        footerSubtitles[i].classList.remove("flexDisplayColumn");
+        footerSubtitles[i].classList.add("noneDisplay");
+      } else if (clickCount / 2 != Math.round(clickCount / 2)) {
+        footerTitleOpener[i].classList.remove("footerTitleOpenerRotate2");
+        footerTitleOpener[i].classList.add("footerTitleOpenerRotate");
+        footerSubtitles[i].classList.remove("noneDisplay");
+        footerSubtitles[i].classList.add("flexDisplayColumn");
+      }
+
+      // footerTitleOpener[i].classList.toggle("footerTitleOpenerRotate");
+    });
+  }
+} else {
+  for (let i = 0; i < footerSubtitles.length; i++) {
+    footerSubtitles[i].classList.remove("noneDisplay");
+    footerSubtitles[i].classList.add("flexDisplayColumn");
+  }
+}
+
+//
+
+let resizeCount = 0;
+window.addEventListener("resize", (event) => {
+  if (window.innerWidth > 833) {
+    resizeCount = 0;
+  }
+
+  if (window.innerWidth < 833) {
+    if (resizeCount == 0) {
+      for (let i = 0; i < footerSubtitles.length; i++) {
+        footerSubtitles[i].classList.add("noneDisplay");
+        resizeCount = 1;
+      }
+    }
+
+    for (let i = 0; i < footerSubtitles.length; i++) {
+      // footerSubtitles[i].classList.add("noneDisplay");
+      let clickCount = 0;
+      footerCategory[i].addEventListener("click", (e) => {
+        clickCount++;
+        if (clickCount / 2 == Math.round(clickCount / 2)) {
+          footerTitleOpener[i].classList.remove("footerTitleOpenerRotate");
+          footerTitleOpener[i].classList.add("footerTitleOpenerRotate2");
+          footerSubtitles[i].classList.remove("flexDisplayColumn");
+          footerSubtitles[i].classList.add("noneDisplay");
+        } else if (clickCount / 2 != Math.round(clickCount / 2)) {
+          footerTitleOpener[i].classList.remove("footerTitleOpenerRotate2");
+          footerTitleOpener[i].classList.add("footerTitleOpenerRotate");
+          footerSubtitles[i].classList.remove("noneDisplay");
+          footerSubtitles[i].classList.add("flexDisplayColumn");
+        }
+
+        // footerTitleOpener[i].classList.toggle("footerTitleOpenerRotate");
+      });
+    }
+  } else {
+    for (let i = 0; i < footerSubtitles.length; i++) {
+      footerSubtitles[i].classList.remove("noneDisplay");
+      footerSubtitles[i].classList.add("flexDisplayColumn");
+    }
+  }
+});
