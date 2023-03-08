@@ -3,10 +3,14 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 100%;
   width: 100%;
   font-family: Helvetica, sans-serif;
   background-color: #fbfbfd;
+}
+
+body{
+  overflow-x: hidden;
+  height: 100%;
 }
 
 /* Header */
@@ -17,6 +21,10 @@ body {
   justify-content: space-around;
   height: 45px;
   padding: 0 11%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .menuText {
@@ -380,6 +388,10 @@ body {
   .logoIcon,
   .bagIcon {
     display: block;
+  }
+
+  .hiddenOverflow{
+    overflow: hidden;
   }
 }
 
