@@ -458,6 +458,7 @@ function slideShowAuto() {
       element.classList.remove("noneDisplay");
       element.classList.add("flexDisplay");
     }
+
   });
 
   circlesStatusSeries.map(function (element) {
@@ -573,9 +574,6 @@ if (window.innerWidth < 833) {
     footerCategory[i].addEventListener("click", (e) => {
       clickCount++;
 
-      // footerSubtitles[i].classList.toggle("noneDisplay");
-      // footerSubtitles[i].classList.toggle("flexDisplayColumn");
-
       if (clickCount / 2 == Math.round(clickCount / 2)) {
         footerTitleOpener[i].classList.remove("footerTitleOpenerRotate");
         footerTitleOpener[i].classList.add("footerTitleOpenerRotate2");
@@ -588,7 +586,6 @@ if (window.innerWidth < 833) {
         footerSubtitles[i].classList.add("flexDisplayColumn");
       }
 
-      // footerTitleOpener[i].classList.toggle("footerTitleOpenerRotate");
     });
   }
 } else {
@@ -615,7 +612,6 @@ window.addEventListener("resize", (event) => {
     }
 
     for (let i = 0; i < footerSubtitles.length; i++) {
-      // footerSubtitles[i].classList.add("noneDisplay");
       let clickCount = 0;
       footerCategory[i].addEventListener("click", (e) => {
         clickCount++;
@@ -631,7 +627,6 @@ window.addEventListener("resize", (event) => {
           footerSubtitles[i].classList.add("flexDisplayColumn");
         }
 
-        // footerTitleOpener[i].classList.toggle("footerTitleOpenerRotate");
       });
     }
   } else {
