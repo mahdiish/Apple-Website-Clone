@@ -99,7 +99,7 @@ body{
 .closeSearchHeader {
   width: 17px;
   cursor: pointer;
-  padding: 6px 2px;
+  padding: 6px 0;
 }
 
 .closeSearchBar1 {
@@ -167,7 +167,6 @@ body{
 
 .hamburgerBarHover {
   background: #f5f5f7;
-  /* transition: 1s; */
 }
 
 .hamburgerBarMov1 {
@@ -280,7 +279,7 @@ body{
   display: none;
   width: 17px;
   cursor: pointer;
-  padding: 5px 2px;
+  padding: 5px 0;
 }
 
 .clearSearchBar1 {
