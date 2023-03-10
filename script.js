@@ -66,6 +66,7 @@ clearSearchBox.addEventListener("click", (e) => {
 })
 
 cancelSearch.addEventListener("click", (e) => {
+  inputSearch.value="";
   searchBox.style.justifyContent = "flex-start";
   searchBoxImg.style.paddingRight = "10px";
   headerMenu.style.display = "flex";
