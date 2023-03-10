@@ -15,7 +15,10 @@ const verticalMenu = document.querySelector(".verticalMenu");
 const headerMenu = document.querySelector(".headerMenu");
 const bagIcon = document.querySelector(".bagIcon");
 const searchBoxRow = document.querySelector(".searchBoxRow");
+const searchBox = document.querySelector(".searchBox");
+const searchBoxImg = document.querySelector(".searchBoxImg");
 const inputSearch = document.querySelector(".inputSearch");
+const clearSearchBox = document.querySelector(".clearSearchBox");
 const bottomSection = document.querySelector(".bottomSection");
 const quickLinksVerticalMenu = document.querySelector(
   ".quickLinksVerticalMenu"
@@ -30,16 +33,13 @@ searchIcon.addEventListener("click", (e) => {
   inputSearchHeader.focus();
 
   document.addEventListener("keydown", (event) => {
-    if (inputSearchHeader.innerHTML === "Search apple.com") {
-      inputSearchHeader.innerHTML = "";
-    }
     inputSearchHeader.style.color = "#fafafa";
   });
 });
 
 closeSearchHeader.addEventListener("click", (e) => {
   SearchIconClickResult.classList.remove("flexDisplay");
-  inputSearchHeader.innerHTML = "Search apple.com";
+  inputSearchHeader.value="";
   menuElement.forEach((element) => {
     element.classList.remove("noneDisplay");
   });
@@ -47,27 +47,33 @@ closeSearchHeader.addEventListener("click", (e) => {
 
 inputSearch.addEventListener("click", (e) => {
   bottomSection.style.display = "none";
+  searchBox.style.justifyContent = "space-around";
+  searchBoxImg.style.paddingRight = "0";
+  clearSearchBox.style.display = "flex";
   quickLinksVerticalMenu.style.display = "flex";
   cancelSearch.style.display = "flex";
   headerMenu.style.display = "none";
   searchBoxRow.style.padding = "7px 4% 7px 4%";
 
   document.addEventListener("keydown", (event) => {
-    if (inputSearch.innerHTML === "Search apple.com") {
-      inputSearch.innerHTML = "";
-    }
     inputSearch.style.color = "#f9f9f9";
   });
 });
 
+clearSearchBox.addEventListener("click", (e) => {
+  inputSearch.value="";
+  inputSearch.focus();
+})
+
 cancelSearch.addEventListener("click", (e) => {
+  searchBox.style.justifyContent = "flex-start";
+  searchBoxImg.style.paddingRight = "10px";
   headerMenu.style.display = "flex";
   bottomSection.style.display = "flex";
+  clearSearchBox.style.display = "none";
   quickLinksVerticalMenu.style.display = "none";
   cancelSearch.style.display = "none";
   searchBoxRow.style.padding = "0px 4% 15px 4%";
-  inputSearch.innerHTML = "Search apple.com";
-  inputSearch.style = "initial";
 });
 
 hamburgerIcon.addEventListener("click", (e) => {
